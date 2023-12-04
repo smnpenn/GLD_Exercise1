@@ -16279,6 +16279,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Box_Stack_04
       objectReference: {fileID: 0}
+    - target: {fileID: 9099277071174553889, guid: adef458f52606ee4887584718d501920,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adef458f52606ee4887584718d501920, type: 3}
 --- !u!4 &813888501 stripped
@@ -17303,6 +17308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VentFloorLong
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dee3d456660ae2442a20aaa3c14bd412,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee3d456660ae2442a20aaa3c14bd412, type: 3}
@@ -34018,6 +34028,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Box_02
       objectReference: {fileID: 0}
+    - target: {fileID: 766553320299898288, guid: 69596cfae86f0e343a21adb114feb9b7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69596cfae86f0e343a21adb114feb9b7, type: 3}
 --- !u!4 &1499206028 stripped
@@ -38879,6 +38894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Base_Floor_Combined_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dee3d456660ae2442a20aaa3c14bd412,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee3d456660ae2442a20aaa3c14bd412, type: 3}
 --- !u!4 &1692993944 stripped
@@ -43549,6 +43569,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VentFloorEntry
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dee3d456660ae2442a20aaa3c14bd412,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dee3d456660ae2442a20aaa3c14bd412, type: 3}
 --- !u!4 &1947643862 stripped
@@ -44886,6 +44911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Prop_Pallet_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113456865449155709, guid: 8e6e1274b8886b847a259255875d34b8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e6e1274b8886b847a259255875d34b8, type: 3}
