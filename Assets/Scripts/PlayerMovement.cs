@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
     public LayerMask ventMask;
     bool isGrounded;
+    bool isInVent;
 
     public float jumpForce;
     public float jumpCooldown;
@@ -38,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        if(Input.GetKey(jumpKey) && readyToJump && isGrounded)
+        if(Input.GetKey(jumpKey) && readyToJump && (isGrounded || isInVent))
         {
             readyToJump = false;
             Jump();
@@ -46,12 +47,18 @@ public class PlayerMovement : MonoBehaviour
         }
 
         LimitMovementSpeed();
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, groundMask) || Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, ventMask);
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, groundMask);
+        isInVent = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, ventMask);
 
-        if(isGrounded)
+        if (isGrounded || isInVent)
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        if (isInVent)
+            moveSpeed = 1.5f;
+        else if (isGrounded)
+            moveSpeed = 3;
     }
 
     private void FixedUpdate()
