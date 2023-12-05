@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float groundDrag;
     public float playerHeight;
     public LayerMask groundMask;
+    public LayerMask ventMask;
     bool isGrounded;
 
     public float jumpForce;
@@ -45,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         LimitMovementSpeed();
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, groundMask);
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, groundMask) || Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, ventMask);
 
         if(isGrounded)
             rb.drag = groundDrag;
